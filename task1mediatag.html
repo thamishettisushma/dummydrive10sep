@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50%;
+            height: 90vh;
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-areas: "Header Header Header"
+            "Sidebar Content-1 Content-1"
+            "Sidebar Content-2 Content-3"
+            "Footer Footer Footer";
+        }
+        .container div{
+            margin: 10px;
+            padding: 5%;
+            background-color: rgb(238, 116, 136);
+            align-content: center;
+        }
+        .b1{
+            grid-area: Header;
+        }
+        .b2{
+            grid-area: Sidebar;
+        }
+        .b3{
+            grid-area: Content-1;
+        }
+        .b4{
+            grid-area: Content-2;
+        }
+        .b5{
+            grid-area: Content-3;
+        }
+        .b6{
+            grid-area: Footer;
+        }
+        @media only screen and (width<600px){
+            .container{
+                grid-template-areas: "Header"
+                "Sidebar"
+                "Content-1"
+                "Content-2"
+                "Content-3"
+                "Footer";
+                background-color: lightpink;
+                
+            }
+            .container div{
+                background-color: lightsalmon;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="b1">Header</div>
+        <div class="b2">Sidebar</div>
+        <div class="b3">Content-1</div>
+        <div class="b4">Content-2</div>
+        <div class="b5">Content-3</div>
+        <div class="b6">Footer</div>
+    </div>
+</center>
+</body>
+</html>

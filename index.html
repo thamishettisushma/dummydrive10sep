@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        overflow-x: hidden;
+    }
+    .head{
+        border: 2px solid;
+        height: 20vh;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        overflow: hidden;
+    
+    }
+    .nav1{
+        position: relative;
+        padding-left:700px ;
+        color: white;
+       
+    }
+    .nav2{
+        display: flex;
+        gap: 20px;
+        list-style-type:none;
+        padding:40px;
+        position: relative;
+        color: white;
+        z-index: 10;
+        
+    }
+    video{
+        width: 100%;
+        position: absolute;
+        z-index: -100;
+    }
+    .ntg{
+        border: 1px solid;
+        height: 23vh;
+        width: 100%;
+    }
+    .main{
+        border: 2px solid;
+        height: 50vh;
+        position: relative;
+        display: flex;
+    }
+    .list{
+        height: 50vh;
+        width: 20%;
+        border: 1px solid;
+    }
+    iframe{
+        position:absolute;
+        margin-left: 20%;
+        width: 100%;
+        height: 50vh;
+    }
+    
+
+</style>
+<body>
+     <section class="head">
+        <video controls autoplay muted>
+            <source src="background video.mp4">
+        </video>
+        <h3 class="nav1">MyBrand</h3>
+       
+            <ul class="nav2">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <div class="nav3">
+                <input type="text" placeholder="search">
+            </div>
+     </section>
+    
+        <div class="ntg">
+
+        </div>
+
+     
+     <section>
+        <div class="main">
+            <div class="list">
+            <a href="colorstabled3.html" target="frame">Tables</a>
+            <hr>
+            <a href="signupd14.html" target="frame">Forms</a>
+            <hr>
+            <a href="task1mediatag.html" target="frame">Lists</a>
+            <hr>
+            <a href="carts.html" target="frame">Cards</a>
+            <hr>
+
+        </div>
+        <iframe src="" width="500px" height="200px" name="frame"></iframe>
+
+
+        </div>
+     </section>
+     
+</body>
+</html>
